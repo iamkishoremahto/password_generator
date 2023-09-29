@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    .container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 100%;
+
+        .row {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            height: 100%;
+            width: 100%;
+
+            .password_wrapper {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                height: 100%;
+                width: 100%;
+
+                .password_generator {
+                    /* From https://css.glass */
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.54);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(11.3px);
+                    -webkit-backdrop-filter: blur(11.3px);
+
+                    height: 50%;
+                    width: 500px;
+                    flex-direction: column;
+                    h1{
+                        position:absolute;
+                        top: 0;
+                    }
+                    p{
+                        background-color: white;
+                        font-size: 2em;
+                        width: 90%;
+                        padding: 10px;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+                        
+
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+    height: 120%;
+
+
+
+}
+
+.custom_btn{
+
+  align-items: center;
+  background: #f5f5fa;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+  box-sizing: border-box;
+  color: #2a1f62;
+  cursor: pointer;
+  display: flex;
+  font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 15px;
+  position: relative;
+  text-align: left;
+  transition: .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  width: max-content;
+  word-break: normal;
+  word-spacing: normal;
+
+
+&:hover {
+  background: #f8f8ff;
+  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+}
+
+}
+@media (min-width: 768px) {
+  .custom_btn {
+    padding: 24px;
+  }
+}
+
+
+h1 {
+    text-align: center;
+    color: #444444;
+    background: transparent;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: #444444;
+   
+    }
+        
+#generated_password{
+    width: 90%;
+
+}
+
